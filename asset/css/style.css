@@ -1,0 +1,17 @@
+html {
+    background: #AAAAAA; }
+
+html, body {
+    height: 100%;
+}
+
+#outer-wrap {
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#inner-wrap {
+    display: table-cell;
+    vertical-align: middle;
+}

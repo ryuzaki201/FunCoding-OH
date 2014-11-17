@@ -1,0 +1,28 @@
+#game-root {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 10px solid black;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+}
+
+#game-root * {
+    position: absolute;
+}
+
+#game-status {
+    display: block;
+    padding: 10px;
+    margin: 10px 0px ;
+    height: 130px;
+    overflow-y: scroll;
+    border: 10px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+#game-status div {
+    margin: 10px;
+}
