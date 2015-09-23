@@ -77,16 +77,49 @@ FunCoding = (function() {
 
         Object.defineProperties(GameObject.prototype, {
             'x': {
-                set: function(x) { this.node.css('left', x + 'px'); },
-                get: function() { return parseInt(this.node.css('left')); } },
+                set: function(x) { 
+                    //this.node.css('left', x + 'px'); 
+                    var isoX = parseInt(this.node.css('left')) - 400 || 0;
+                    var isoY = parseInt(this.node.css('top')) || 0;
+                    var cartX = x;
+                    var cartY = (2 * isoY - isoX) / 2;
+                    var newIsoX = cartX - cartY;
+                    var newIsoY = (cartX + cartY) / 2;
+                    this.node.css('left', (newIsoX + 400) + 'px');
+                    this.node.css('top', newIsoY + 'px');
+
+                },
+                get: function() { 
+                    //return parseInt(this.node.css('left'));
+                    var isoX = parseInt(this.node.css('left')) - 400;
+                    var isoY = parseInt(this.node.css('top'));
+                    return (2 * isoY + isoX) / 2; 
+                } 
+            },
 
             'y': {
-                set: function(y) { this.node.css('top', y + 'px'); },
-                get: function() { return parseInt(this.node.css('top')); } },
+                set: function(y) { 
+                    //this.node.css('top', y + 'px'); 
+                    var isoX = parseInt(this.node.css('left')) - 400 || 0;
+                    var isoY = parseInt(this.node.css('top')) || 0;
+                    var cartX = (2 * isoY + isoX) / 2;
+                    var cartY = y;
+                    var newIsoX = cartX - cartY;
+                    var newIsoY = (cartX + cartY) / 2;
+                    this.node.css('left', (newIsoX + 400) + 'px');
+                    this.node.css('top', newIsoY + 'px');
+                },
+                get: function() { 
+                    //return parseInt(this.node.css('top'));
+                    var isoX = parseInt(this.node.css('left')) - 400;
+                    var isoY = parseInt(this.node.css('top'));
+                    return (2 * isoY - isoX) / 2; 
+                } 
+            },
 
             'w': {
-                set: function(w) { this.node.css('width', w + 'px'); },
-                get: function() { return parseInt(this.node.css('width')); } },
+                set: function(w) { this.node.css('width', (w * 2) + 'px'); console.log(w*2); },
+                get: function() { return parseInt(this.node.css('width')) / 2; } },
 
             'h': {
                 set: function(h) { this.node.css('height', h + 'px'); },
@@ -119,9 +152,13 @@ FunCoding = (function() {
 
         GameObject.prototype.setPosition = function(x, y, time, cb) {
             if(time) {
+                var isoX = x - y;
+                var isoY = (x + y) / 2;
+                console.log(x + " " + y);
+                console.log(isoX + " " + isoY);
                 this.node.animate({
-                    left: x,
-                    top:  y,
+                    left: isoX + 400,
+                    top:  isoY,
                 }, time, cb);
             } else {
                 this.node.x = x;
@@ -475,6 +512,7 @@ FunCoding = (function() {
                     }
                 ]);
             } else {
+                console.log(thiz.obj.x + " " + thiz.obj.y);
                 return sequence([
                     function(finish) {
                         thiz.setObjPos(br, bc);

@@ -31,7 +31,8 @@ $(function() {
     // static image
     (function() {
         new FunCoding.GameObject(
-            $('<image style="width:400px;height:400px" src="asset/img/Lantai_Rumah 8x8.png"/>')
+            $('<image style="width:400px;height:400px" src="asset/img/Lantai_Rumah 8x8.png"/>'),
+            -200, 200
         ).addTo(root);
 
         for(r in obstacle) for(c in obstacle[r]) {
