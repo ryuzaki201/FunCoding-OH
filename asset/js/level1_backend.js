@@ -31,14 +31,14 @@ $(function() {
     // static image
     (function() {
         new FunCoding.GameObject(
-            $('<image style="width:400px;height:400px" src="asset/img/Lantai_Rumah 8x8.png"/>'),
-            -200, 200
+            $('<image style="width:800px;height:400px" src="asset/img/Lantai_Rumah 8x8.png"/>'),
+            -187.5, 187.5
         ).addTo(root);
 
         for(r in obstacle) for(c in obstacle[r]) {
             if(obstacle[r][c] == 1) {
                 new FunCoding.GameObject(
-                    $('<image style="top:8px;width:50px" src="asset/img/table.png"/>'),
+                    $('<image style="top:0px;width:50px" src="asset/img/table.png"/>'),
                     (c * 50), (r * 50)
                 ).addTo(root);
             }

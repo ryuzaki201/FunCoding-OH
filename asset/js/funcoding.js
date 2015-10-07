@@ -81,7 +81,7 @@ FunCoding = (function() {
                     //this.node.css('left', x + 'px'); 
                     var isoX = parseInt(this.node.css('left')) - 400 || 0;
                     var isoY = parseInt(this.node.css('top')) || 0;
-                    var cartX = x;
+                    var cartX = x - 12.5;
                     var cartY = (2 * isoY - isoX) / 2;
                     var newIsoX = cartX - cartY;
                     var newIsoY = (cartX + cartY) / 2;
@@ -103,7 +103,7 @@ FunCoding = (function() {
                     var isoX = parseInt(this.node.css('left')) - 400 || 0;
                     var isoY = parseInt(this.node.css('top')) || 0;
                     var cartX = (2 * isoY + isoX) / 2;
-                    var cartY = y;
+                    var cartY = y + 12.5;
                     var newIsoX = cartX - cartY;
                     var newIsoY = (cartX + cartY) / 2;
                     this.node.css('left', (newIsoX + 400) + 'px');

@@ -11,3 +11,4 @@ perintah yang tersedia:
 status yang tersedia:
     bisaMaju ?
 */
+
