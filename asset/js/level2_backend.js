@@ -44,7 +44,8 @@ $(function() {
     // static object
     (function() {
         new FunCoding.GameObject(
-            $('<image src="asset/img/jalanan.png" style="width:400px;height:400px"/>')
+            $('<image src="asset/img/jalanan.png" style="width:800px;height:400px"/>'),
+            -187.5, 187.5
         ).addTo(root);
 
         new FunCoding.GameObject(
