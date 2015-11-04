@@ -39,8 +39,8 @@ $(function() {
             if(obstacle[r][c] == 1) {
                 new FunCoding.GameObject(
                     [
-                        $('<image style="top:8px;width:50px" src="asset/img/table.png"/>'),
-                        $('<image style="left:10px;width:30px" src="asset/img/supermarket-apel.png" />')
+                        $('<image style="top:8px;width:60px;left:-5px;" src="asset/img/table.png"/>'),
+                        $('<image style="left:5px;width:40px" src="asset/img/supermarket-apel.png" />')
                     ],
                     (c * 50), (r * 50)
                 ).addTo(root);
@@ -49,8 +49,8 @@ $(function() {
             else if(obstacle[r][c] == 2) {
                 new FunCoding.GameObject(
                     [
-                        $('<image style="top:8px;width:50px" src="asset/img/table.png"/>'),
-                        $('<image style="left:10px;width:30px" src="asset/img/supermarket-gula.png" />')
+                        $('<image style="top:8px;width:60px;left:-5px;" src="asset/img/table.png"/>'),
+                        $('<image style="left:5px;width:40px" src="asset/img/supermarket-gula.png" />')
                     ],
                     (c * 50), (r * 50)
                 ).addTo(root);
@@ -59,8 +59,8 @@ $(function() {
             else if(obstacle[r][c] == 3) {
                 new FunCoding.GameObject(
                     [
-                        $('<image style="top:8px;width:50px" src="asset/img/table.png"/>'),
-                        $('<image style="top:5px;left:10px;width:30px" src="asset/img/supermarket-keju.png" />')
+                        $('<image style="top:8px;width:60px;left:-5px;" src="asset/img/table.png"/>'),
+                        $('<image style="top:5px;left:5px;width:40px" src="asset/img/supermarket-keju.png" />')
                     ],
                     (c * 50), (r * 50)
                 ).addTo(root);
@@ -69,8 +69,8 @@ $(function() {
             else if(obstacle[r][c] == 4) {
                 new FunCoding.GameObject(
                     [
-                        $('<image style="top:8px;width:50px" src="asset/img/table.png"/>'),
-                        $('<image style="left:10px;width:30px" src="asset/img/supermarket-margarin.png" />')
+                        $('<image style="top:8px;width:60px;left:-5px;" src="asset/img/table.png"/>'),
+                        $('<image style="top:5px;left:5px;width:40px" src="asset/img/supermarket-margarin.png" />')
                     ],
                     (c * 50), (r * 50)
                 ).addTo(root);
@@ -79,8 +79,8 @@ $(function() {
             else if(obstacle[r][c] == 5) {
                 new FunCoding.GameObject(
                     [
-                        $('<image style="top:8px;width:50px" src="asset/img/table.png"/>'),
-                        $('<image style="left:10px;width:30px" src="asset/img/supermarket-telor.png" />')
+                        $('<image style="top:8px;width:60px;left:-5px;" src="asset/img/table.png"/>'),
+                        $('<image style="left:5px;width:40px" src="asset/img/supermarket-telor.png" />')
                     ],
                     (c * 50), (r * 50)
                 ).addTo(root);
@@ -89,8 +89,8 @@ $(function() {
             else if(obstacle[r][c] == 6) {
                 new FunCoding.GameObject(
                     [
-                        $('<image style="top:8px;width:50px" src="asset/img/table.png"/>'),
-                        $('<image style="left:10px;width:30px" src="asset/img/supermarket-terong.png" />')
+                        $('<image style="top:8px;width:60px;left:-5px;" src="asset/img/table.png"/>'),
+                        $('<image style="left:5px;width:40px" src="asset/img/supermarket-terong.png" />')
                     ],
                     (c * 50), (r * 50)
                 ).addTo(root);

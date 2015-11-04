@@ -549,19 +549,19 @@ FunCoding = (function() {
 
         Player.getNormalFace = function() {
             return [
-                $('<img style="height:40px;left:15px;" src="asset/img/Orang_up.png"/>'),
-                $('<img style="height:40px;left:15px;" src="asset/img/Orang_left.png"/>'),
-                $('<img style="height:40px;left:15px;" src="asset/img/Orang_down.png"/>'),
-                $('<img style="height:40px;left:15px;" src="asset/img/Orang_right.png"/>'),
+                $('<img style="height:50px;left:12px;top:-20px;" src="asset/img/Orang_up.png"/>'),
+                $('<img style="height:50px;left:12px;top:-20px;" src="asset/img/Orang_left.png"/>'),
+                $('<img style="height:50px;left:12px;top:-20px;" src="asset/img/Orang_down.png"/>'),
+                $('<img style="height:50px;left:12px;top:-20px;" src="asset/img/Orang_right.png"/>'),
             ];
         }
 
         Player.getBikerFace = function() {
             return [
-                $('<img style="height:40px;left:12px;" src="asset/img/Motor_up.png"/>'),
-                $('<img style="height:40px;left:12px;" src="asset/img/Motor_left.png"/>'),
-                $('<img style="height:40px;left:12px;" src="asset/img/Motor_down.png"/>'),
-                $('<img style="height:40px;left:12px;" src="asset/img/Motor_right.png"/>'),
+                $('<img style="height:50px;left:12px;top:-20px;" src="asset/img/Motor_up.png"/>'),
+                $('<img style="height:50px;left:12px;top:-20px;" src="asset/img/Motor_left.png"/>'),
+                $('<img style="height:50px;left:12px;top:-20px;" src="asset/img/Motor_down.png"/>'),
+                $('<img style="height:50px;left:12px;top:-20px;" src="asset/img/Motor_right.png"/>'),
             ];
         }
 
