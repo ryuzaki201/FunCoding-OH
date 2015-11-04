@@ -31,7 +31,8 @@ $(function() {
     // static image
     (function() {
         new FunCoding.GameObject(
-            $('<image style="width:400px;height:400px" src="asset/img/Lantai_Rumah 8x8.png"/>')
+            $('<image style="width:800px;height:400px" src="asset/img/Lantai_Rumah 8x8.png"/>'),
+            -187.5, 187.5
         ).addTo(root);
 
         for(r in obstacle) for(c in obstacle[r]) {
@@ -50,7 +51,7 @@ $(function() {
         }
 
         new FunCoding.GameObject(
-            $('<img src="asset/img/Mat.png" style="height:40px;left:5px;top:12px;"/>'),
+            $('<img src="asset/img/Mat.png" style="width:50px;left:15px;top:15px;"/>'),
             (7 * 50), (0 * 50)
         ).addTo(root)
     })();

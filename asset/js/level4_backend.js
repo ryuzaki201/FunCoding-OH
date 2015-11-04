@@ -44,11 +44,12 @@ $(function() {
     // static object
     (function() {
         new FunCoding.GameObject(
-            $('<image src="asset/img/jalanan.png" style="width:400px;height:400px"/>')
+            $('<image src="asset/img/jalanan.png" style="width:800px;height:400px"/>'),
+            -187.5, 187.5
         ).addTo(root);
 
         new FunCoding.GameObject(
-            $('<img src="asset/img/Mat.png" style="height:40px;left:5px;top:12px;"/>'),
+            $('<img src="asset/img/Mat.png" style="width:50px;left:-15px;top:5px;"/>'),
             (endpoint.ec * 50), (endpoint.er * 50)
         ).addTo(root);
 

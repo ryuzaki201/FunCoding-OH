@@ -31,7 +31,8 @@ $(function() {
     // static image
     (function() {
         new FunCoding.GameObject(
-            $('<image style="width:400px;height:400px" src="asset/img/supermarket-lantai 8x8.png"/>')
+            $('<image style="width:800px;height:400px" src="asset/img/supermarket-lantai 8x8.png"/>'),
+            -187.5, 187.5
         ).addTo(root);
 
         for(r in obstacle) for(c in obstacle[r]) {
@@ -59,7 +60,7 @@ $(function() {
                 new FunCoding.GameObject(
                     [
                         $('<image style="top:8px;width:50px" src="asset/img/table.png"/>'),
-                        $('<image style="left:10px;width:30px" src="asset/img/supermarket-keju.png" />')
+                        $('<image style="top:5px;left:10px;width:30px" src="asset/img/supermarket-keju.png" />')
                     ],
                     (c * 50), (r * 50)
                 ).addTo(root);
@@ -97,14 +98,14 @@ $(function() {
 
             else if(obstacle[r][c] == 9) {
                 new FunCoding.GameObject(
-                    $('<image src="asset/img/supermarket-kasir.png" style="height:40px;left:12px;top:5px;"/>'),
+                    $('<image src="asset/img/supermarket-kasir.png" style="height:40px;"/>'),
                     (c * 50), (r * 50)
                 ).addTo(root);
             }
         }
 
         new FunCoding.GameObject(
-            $('<img src="asset/img/Mat.png" style="height:40px;left:5px;top:12px;"/>'),
+            $('<img src="asset/img/Mat.png" style="width:50px;left:5px;top:12px;"/>'),
             (endpoint.c * 50), (endpoint.r * 50)
         ).addTo(root)
     })();

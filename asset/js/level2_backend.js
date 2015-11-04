@@ -49,7 +49,7 @@ $(function() {
         ).addTo(root);
 
         new FunCoding.GameObject(
-            $('<img src="asset/img/Mat.png" style="height:40px;left:5px;top:12px;"/>'),
+            $('<img src="asset/img/Mat.png" style="width:50px;left:-15px;top:5px;"/>'),
             (endpoint.sc * 50), (endpoint.sr * 50)
         ).addTo(root);
 

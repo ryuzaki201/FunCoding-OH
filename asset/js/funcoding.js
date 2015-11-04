@@ -118,7 +118,7 @@ FunCoding = (function() {
             },
 
             'w': {
-                set: function(w) { this.node.css('width', (w * 2) + 'px'); console.log(w*2); },
+                set: function(w) { this.node.css('width', (w * 2) + 'px'); },
                 get: function() { return parseInt(this.node.css('width')) / 2; } },
 
             'h': {
@@ -154,8 +154,6 @@ FunCoding = (function() {
             if(time) {
                 var isoX = x - y;
                 var isoY = (x + y) / 2;
-                console.log(x + " " + y);
-                console.log(isoX + " " + isoY);
                 this.node.animate({
                     left: isoX + 400,
                     top:  isoY,
@@ -336,7 +334,7 @@ FunCoding = (function() {
         function ExclamationMark(r, c, root, takeAnimCb, useCb) {
             this.baseClass.call(this,
                 new GameObject(
-                    $('<image src="asset/img/point.png" style="top:10px;left:10px;width:30px"/>'),
+                    $('<image src="asset/img/point.png" style="top:0px;left:0px;width:50px"/>'),
                     (c * 50), (r * 50)
                 ).addTo(root),
                 undefined, undefined, takeAnimCb, useCb
@@ -512,7 +510,6 @@ FunCoding = (function() {
                     }
                 ]);
             } else {
-                console.log(thiz.obj.x + " " + thiz.obj.y);
                 return sequence([
                     function(finish) {
                         thiz.setObjPos(br, bc);
@@ -552,19 +549,19 @@ FunCoding = (function() {
 
         Player.getNormalFace = function() {
             return [
-                $('<img style="height:40px;left:12px;top:5px;" src="asset/img/Orang_up.png"/>'),
-                $('<img style="height:40px;left:12px;top:5px;" src="asset/img/Orang_left.png"/>'),
-                $('<img style="height:40px;left:12px;top:5px;" src="asset/img/Orang_down.png"/>'),
-                $('<img style="height:40px;left:12px;top:5px;" src="asset/img/Orang_right.png"/>'),
+                $('<img style="height:40px;left:15px;" src="asset/img/Orang_up.png"/>'),
+                $('<img style="height:40px;left:15px;" src="asset/img/Orang_left.png"/>'),
+                $('<img style="height:40px;left:15px;" src="asset/img/Orang_down.png"/>'),
+                $('<img style="height:40px;left:15px;" src="asset/img/Orang_right.png"/>'),
             ];
         }
 
         Player.getBikerFace = function() {
             return [
-                $('<img style="height:40px;left:12px;top:5px;" src="asset/img/Motor_up.png"/>'),
-                $('<img style="height:40px;left:12px;top:5px;" src="asset/img/Motor_left.png"/>'),
-                $('<img style="height:40px;left:12px;top:5px;" src="asset/img/Motor_down.png"/>'),
-                $('<img style="height:40px;left:12px;top:5px;" src="asset/img/Motor_right.png"/>'),
+                $('<img style="height:40px;left:12px;" src="asset/img/Motor_up.png"/>'),
+                $('<img style="height:40px;left:12px;" src="asset/img/Motor_left.png"/>'),
+                $('<img style="height:40px;left:12px;" src="asset/img/Motor_down.png"/>'),
+                $('<img style="height:40px;left:12px;" src="asset/img/Motor_right.png"/>'),
             ];
         }
 

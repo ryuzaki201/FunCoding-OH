@@ -38,20 +38,20 @@ $(function() {
         for(r in obstacle) for(c in obstacle[r]) {
             if(obstacle[r][c] == 1) {
                 new FunCoding.GameObject(
-                    $('<image style="top:0px;width:50px" src="asset/img/table.png"/>'),
+                    $('<image style="top:8px;width:50px" src="asset/img/table.png"/>'),
                     (c * 50), (r * 50)
                 ).addTo(root);
             }
             else if(obstacle[r][c] == 9) {
                 new FunCoding.GameObject(
-                    $('<image src="asset/img/Mother.png" style="height:40px;left:12px;top:5px;"/>'),
+                    $('<image src="asset/img/Mother.png" style="height:40px;left:12px;"/>'),
                     (c * 50), (r * 50)
                 ).addTo(root);
             }
         }
 
         new FunCoding.GameObject(
-            $('<img src="asset/img/Mat.png" style="height:40px;left:5px;top:12px;"/>'),
+            $('<img src="asset/img/Mat.png" style="width:50px;left:15px;top:15px;"/>'),
             (endpoint.ec * 50), (endpoint.er * 50)
         ).addTo(root)
     })();
