@@ -92,7 +92,8 @@ $(function() {
                                         'Menggunakan kunci untuk keluar <br>',
                                         '<strong>Game Selesai, silahakan ke level selanjutnya</strong>'
                                     ].join(''));
-                                    alert('Game Selesai, silahkan lanjut ke level selanjutnya');
+                                    window.location = "level2.html";
+                                    // alert('Game Selesai, silahkan lanjut ke level selanjutnya');
                                 },
                             ]);
                         } else {
@@ -181,5 +182,5 @@ $(function() {
         window.ambil();
     }
 
-    FunCoding.includeScript('level1_solusi.js');
+    FunCoding.includeScript('solusi/level1_solusi.js');
 });

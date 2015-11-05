@@ -110,7 +110,8 @@ $(function() {
                     'Menuju Supermarket <br>',
                     '<strong>Game Selesai, silahakan ke level selanjutnya</strong>'
                 ].join(''));
-                alert('Game Selesai, silahkan lanjut ke level selanjutnya');
+                window.location = "level3.html";
+                // alert('Game Selesai, silahkan lanjut ke level selanjutnya');
             },
         ]);
     }
@@ -208,7 +209,7 @@ $(function() {
         return tmp[0];
     }
 
-    FunCoding.includeScript('level2_solusi.js');
+    FunCoding.includeScript('solusi/level2_solusi.js');
 
     queue.start(updater);
 });

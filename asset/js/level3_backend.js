@@ -218,7 +218,8 @@ $(function() {
                                 'Keluar <br>',
                                 '<strong>Game Selesai, silahakan ke level selanjutnya</strong>'
                             ].join(''));
-                            alert('Game Selesai, silahkan lanjut ke level selanjutnya');
+                            window.location = "level4.html";
+                            // alert('Game Selesai, silahkan lanjut ke level selanjutnya');
                         }
                     ])
                 ]);
@@ -282,5 +283,5 @@ $(function() {
         window.ambil();
     }
 
-    FunCoding.includeScript('level3_solusi.js');
+    FunCoding.includeScript('solusi/level3_solusi.js');
 });

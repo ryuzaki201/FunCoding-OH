@@ -98,7 +98,8 @@ $(function() {
                         'Masuk rumah <br>',
                         '<strong>Game Selesai, silahakan ke level selanjutnya</strong>'
                     ].join(''));
-                    alert('Game Selesai, silahkan lanjut ke level selanjutnya');
+                    window.location = "level5.html";
+                    // alert('Game Selesai, silahkan lanjut ke level selanjutnya');
                 },
             ]);
         }
@@ -191,7 +192,7 @@ $(function() {
         window.turunMotor();
     }
 
-    FunCoding.includeScript('level4_solusi.js');
+    FunCoding.includeScript('solusi/level4_solusi.js');
 
     queue.start(updater);
 });

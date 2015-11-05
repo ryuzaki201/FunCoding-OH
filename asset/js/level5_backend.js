@@ -68,9 +68,9 @@ $(function() {
                     player.setObjDir();
                     addStatus([
                         'Belanja diserahkan ke mama <br>',
-                        '<strong>Game Selesai</strong>'
+                        '<strong>Selamat! Kamu telah menyelesaikan tugas kamu hari ini</strong>'
                     ].join(''));
-                    alert('Game Selesai');
+                    alert('Selamat! Kamu telah menyelesaikan tugas kamu hari ini');
                 }
             );
 
@@ -123,5 +123,5 @@ $(function() {
         ]));
     }
 
-    FunCoding.includeScript('level5_solusi.js');
+    FunCoding.includeScript('solusi/level5_solusi.js');
 });
