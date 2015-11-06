@@ -161,7 +161,7 @@ $(function() {
 
 
     addStatus([
-        '<strong>Game Mulai</strong><br>',
+        '<strong>Game Mulai. Silahkan buka folder <i>solusi</i> dan <i>edit</i> File <i>level2_solusi.js</i></strong><br>',
         'Berada di baris ', player.r + 1, ', kolom ', player.c + 1 ,
         ', menghadap ', ["utara", "barat", "selatan", "timur"][player.d]
     ].join(''));
