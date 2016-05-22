@@ -9,3 +9,18 @@ perintah yang tersedia:
 status yang tersedia:
     bisaMaju ?
 */
+maju()
+maju()
+maju()
+maju()
+belokKanan()
+maju()
+maju()
+maju()
+maju()
+maju()
+maju()
+belokKanan()
+maju()
+belokKiri()
+bicara()
